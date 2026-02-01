@@ -1,11 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-
 import Header from "../component/Header";
-import Footer from "../component/Footer";
 
 const Project = () => {
-    const navigate = useNavigate();
 
     return (
         <div id="wrap">
@@ -16,14 +11,14 @@ const Project = () => {
             <Header />
 
             {/* main */}
-            <section className="main">
+            <main id="container" className="main">
                 <div className="select-wrap">
                     <h2>
                         PROJECT 
                         <em>[ 아래 카드에 커서를 올려보세요! ]</em>
                     </h2>
                     <div className="select-box" id="selectBox">
-                        <div className="box-item item1" onClick={() => navigate('/profile')}>
+                        <div className="box-item item1">
                             <div className="box-front">
                                 <h3>의료기기 플랫폼 프로토타입 제작 (Facial Implant 요구분석)</h3>
                                 <p>2024-11 ~ 2025-01</p>
@@ -42,7 +37,7 @@ const Project = () => {
                             </div>
                         </div>
 
-                        <div className="box-item item2" onClick={() => navigate('/profile')}>
+                        <div className="box-item item2">
                             <div className="box-front">
                                 <h3>LGU+ 관리자(Admin) 페이지 현대화 프로젝트</h3>
                                 <p>2024-06 ~ 2024-09</p>
@@ -61,7 +56,7 @@ const Project = () => {
                             </div>
                         </div>
 
-                        <div className="box-item item3" onClick={() => navigate('/profile')}>
+                        <div className="box-item item3">
                             <div className="box-front">
                                 <h3>LX플랫폼 고도화 프로젝트</h3>
                                 <p>[2023-11-06 ~ 2024-01-26]</p>
@@ -80,7 +75,7 @@ const Project = () => {
                             </div>
                         </div>
 
-                        <div className="box-item item4" onClick={() => navigate('/profile')}>
+                        <div className="box-item item4">
                             <div className="box-front">
                                 <h3>신한은행 통합단말 차세대프로젝트</h3>
                                 <p>[2022-02-03 ~ 2022-09-30]</p>
@@ -98,9 +93,7 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <Footer/>
+            </main>
         </div>
     );
 }

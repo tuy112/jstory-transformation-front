@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 
 import Header from "../component/Header";
-import Footer from "../component/Footer";
-
-// image
 import me from '../../static/images/about_man.png';
 
 const Profile = () => {
@@ -68,10 +65,9 @@ const Profile = () => {
                         <p>Linux Server Deverlop</p>
                         <p>Java &#40;Spring&#41; </p>
                         <p>Javascript &#40;React.js, Node.js&#41; </p>
-                        <p>Python &#40;Flask&#41; </p>
                         <p>Publishing with html, CSS, JS </p>
                         <p>Connecting DB (using MySQL, PostgreSQL, Oracle) </p>
-                        <p>Using Eclipse, Websquare5, Nexacro (Java, JSP.. etc) </p>
+                        <p>Using Eclipse, Websquare5 (Java, JSP.. etc) </p>
                         <p>UX Research / UI Prototyping </p>
                     </div>
                 </div>
@@ -113,8 +109,6 @@ const Profile = () => {
                     </div>
                 </div>
             </section>
-
-            <Footer/>
         </div>
     );
 }
