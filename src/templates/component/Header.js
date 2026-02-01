@@ -1,10 +1,10 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
-    // 햄버거 메뉴 토글 핸들러 최적화
+    // 햄버거 메뉴 토글
     const toggleMenu = useCallback(() => {
         setIsOpen(prev => !prev);
     }, []);
@@ -35,83 +35,46 @@ function Header() {
                 </button>
 
                 <div className={`side-menu ${isOpen ? "open" : ""}`} id="sideMenu">
-                    <div className="login-state">
-                        <h3 className="no-login">로그인이 필요합니다</h3>
-                        <h3 className="yes-login">어서오세요</h3>
-                    </div>
                     <ul className="menu-section">
-                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/home">Home</Link></li>
                         <li>
                             <Link to="/profile">About Me</Link>
-                            <ul className="sub-section">
-                                <li><Link to="/profile">Profile</Link></li>
-                                <li><Link to="/project">Project</Link></li>
-                            </ul>
                         </li>
                         <li>
-                            <Link to="/study">Jay's 공부방</Link>
-                            <ul className="sub-section">
-                                <li><Link to="/server-create">리눅스 서버구축하기</Link></li>
-                                <li><Link to="/certificate">공부방(리눅스+정처기)</Link></li>
-                            </ul>
+                            <Link to="/project">프로젝트 모음</Link>
                         </li>
-                        <li>
-                            <Link to="/hobby">취미 기록방</Link>
-                            <ul className="sub-section">
-                                <li><Link to="/mountain">등산</Link></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <Link to="/three">3D 공간으로 초대합니다!</Link>
-                        </li>
-                    </ul>
-
-                    <ul className="bottom-menu">
-                        <li><Link to="/todo">TIL/WIL</Link></li>
+                        <li><Link to="/todo">투두리스트</Link></li>
                         <li>
                             <Link 
                                 to="https://github.com/tuy112/Jstory" 
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Jstory ASIS
+                                Jstory ASIS ver.
                             </Link>
                         </li>
                         <li>
                             <Link 
-                                to="https://jstoryjay.notion.site/Jay-UI-UX-124211b2c60980b98d93f25d148bdcc3?pvs=4"
+                                to="https://jstoryjay.notion.site/Jay-Fullstack-Dev-174211b2c60980839dfef67206e6af66"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                노션 이력서 링크
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/doc/Jstory_고도화프로젝트_화면설계서_v0.26_250115.pptx"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                화면설계서 v0.26
+                                노션이력서 바로가기 
                             </Link>
                         </li>
                     </ul>
                 </div>
 
-                {/* Header loginMenu */}
-                <div className="login-buttons">
-                    <div className="web-login">
-                        <div className="main-button">로그인메뉴</div>
-                        <div className="sub-buttons">
-                            <Link to="/login" className="sub-button">로그인</Link>
-                            <Link to="/signup" className="sub-button">회원가입</Link>
-                        </div>
-                    </div>
-                    <div className="mobile-login">
-                        <Link to="/login" className="main-button">LOGIN</Link>
-                        <div className="sub-buttons">
-                            <Link to="/signup" className="sub-button">회원가입</Link>
-                            <Link to="/" className="sub-button">Gate 이동</Link>
+                {/* Header topmenu */}
+                <div className="top-menu">
+                    <div className="project-buttons">
+                        <div className="web-login">
+                            <div className="main-button">프로젝트 바로가기</div>
+                            <div className="sub-buttons">
+                                <Link to="/mountain" className="sub-button">산행기록방</Link>
+                                <Link to="/study" className="sub-button">공부기록방</Link>
+                                <Link to="/three" className="sub-button">3D공간</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
