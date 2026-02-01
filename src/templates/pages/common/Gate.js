@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../static/images/earth.png';
-
-import '../../../static/css/common/gate.css';
 
 function Gate() {
     const [isLoading, setIsLoading] = useState(true);
@@ -13,7 +11,7 @@ function Gate() {
         setProgress((prev) => {
           if (prev >= 100) {
             clearInterval(interval);
-            setIsLoading(false); // 로딩 완료
+            setIsLoading(false);
             return 100;
           }
           return prev + 2;
