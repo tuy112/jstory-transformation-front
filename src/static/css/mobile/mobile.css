@@ -17,7 +17,7 @@
     }
 
     .header-logo {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         line-height: 1.2;
     }
 
@@ -30,15 +30,15 @@
         left: 15px;
     }
 
-    /* 모바일 로그인 버튼 스타일 */
-    .login-buttons {
+    /* header - 프로젝트 바로가기 */
+    .project-buttons {
         position: absolute;
         right: 15px;
         top: 50%;
         transform: translateY(-50%);
     }
 
-    .login-buttons .main-button {
+    .project-buttons .main-button {
         background: rgba(255,255,255,0.15);
         border-radius: 20px;
         padding: 8px 15px;
@@ -48,7 +48,7 @@
         border: 1px solid rgba(255,255,255,0.2);
     }
 
-    .login-buttons .sub-buttons {
+    .project-buttons .sub-buttons {
         position: absolute;
         top: 100%;
         right: 0;
@@ -61,13 +61,13 @@
         transition: all 0.3s ease;
     }
 
-    .login-buttons:hover .sub-buttons {
+    .project-buttons:hover .sub-buttons {
         opacity: 1;
         visibility: visible;
         transform: translateY(5px);
     }
 
-    .login-buttons .sub-button {
+    .project-buttons .sub-button {
         background: rgba(255,255,255,0.9);
         color: #333;
         padding: 8px 15px;
@@ -77,21 +77,20 @@
         transition: all 0.2s ease;
     }
 
-    .login-buttons .sub-button:hover {
+    .project-buttons .sub-button:hover {
         background: #fff;
         transform: translateX(-5px);
     }
 
     /* main */
-    .select-wrap {
+    .main-wrap {
         padding: 20px 0;
         min-height: calc(100vh - 80px);
     }
 
-    .select-wrap h2 {
-        font-size: 28px;
-        margin-bottom: 30px;
-        padding: 0 15px;
+    .main-wrap h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
         line-height: 1.3;
     }
 
@@ -123,37 +122,30 @@
         margin-top: 20px;
     }
 
-    /* modal */
-    .modal {
-        width: 90%;
-        max-width: 400px;
-        padding: 25px 20px;
+    /* 유튜브 배너 */
+    .yt-banner {
+        margin: 25px auto 35px;
+        padding: 20px 15px;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 14px;
     }
 
-    .modal h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
+    .yt-left {
+        text-align: center;
     }
 
-    .modal p {
-        font-size: 16px;
-        margin-bottom: 15px;
+    .yt-right {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .modal-close-btn {
-        top: 12px;
-        right: 15px;
-        font-size: 24px;
-        padding: 5px;
+    .yt-thumb {
+        width: 100%;
     }
 
-    .modal textarea {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .modal .common-btn {
-        font-size: 16px;
-        padding: 10px 20px;
+    .yt-subscribe {
+        width: 100%;
     }
 }
