@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 // 공통
@@ -8,48 +7,44 @@ import Home from './templates/pages/common/Home';
 // 소개
 import Profile from './templates/pages/Profile';
 import Project from './templates/pages/Project';
-import History from './templates/pages/History';
-
-// 로그인, 회원가입
-import Login from './templates/pages/Login';
-import Signup from './templates/pages/Signup';
 
 // 프로젝트
 import Todo from './templates/projects/todo/Todo';
 import Mountain from './templates/projects/mountain/Mountain';
 import Three from './templates/projects/three/Three';
-import ServerCreate from './templates/projects/study/ServerCreate';
-import Certificate from './templates/projects/study/Certificate';
+import Diet from './templates/projects/diet/Diet';
+import Study from './templates/projects/study/Study';
 
-// 모달 모음
-import TilModal from './templates/component/TilModal';
+// App 컴포넌트
+import MusicBox from "./templates/component/MusicBox/MusicBox";
 
 const App = () => {
   return (
-    <Routes>
-      {/* Main Routes */}
-      <Route path="/" element={<Gate />} />
-      <Route path="/home" element={<Home />} />
-      
-      {/* Page Routes */}
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/project" element={<Project />} />
-      <Route path="/history" element={<History />} />
-      
-      {/* Auth Routes */}
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-      
-      {/* Project Routes */}
-      <Route path="/todo" element={<Todo />} />
-      <Route path="/three" element={<Three />} />
-      <Route path="/mountain" element={<Mountain />} />
-      <Route path="/server-create" element={<ServerCreate />} />
-      <Route path="/certificate" element={<Certificate />} />
+    <>
+      {/* 페이지 */}
+      <Routes>
+        {/* Main Routes */}
+        <Route path="/" element={<Gate />} />
+        <Route path="/home" element={<Home />} />
+        
+        {/* Page Routes */}
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/project" element={<Project />} />
+        
+        {/* Project Routes */}
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/three" element={<Three />} />
+        <Route path="/mountain" element={<Mountain />} />
+        <Route path="/diet" element={<Diet />} />
+        <Route path="/study" element={<Study />} />
+      </Routes>
 
-      {/* modal components */}
-      <Route path="/til" element={<TilModal />} />
-    </Routes>
+      {/* 전역 고정 UI */}
+      <MusicBox />
+    </>
+    
+
+    
   );
 };
 
