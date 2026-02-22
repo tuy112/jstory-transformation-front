@@ -59,37 +59,6 @@ function Home() {
                     </div>
                 </section>
 
-                {/* YouTube 채널 미리보기 */}
-                <section className="yt-banner">
-                    <div className="yt-left">
-                        <div className="yt-badge">YouTube</div>
-                        <h3 className="yt-title">감성적인 남자 [Emotional Man]</h3>
-                        <p className="yt-desc">
-                            듣고 싶은 노래가 있는진 모르겠으나, 노래 듣고 가세요 :&#41;
-                        </p>
-                    </div>
-
-                    <div className="yt-right">
-                        <Link
-                            className="yt-thumb"
-                            to="https://www.youtube.com/channel/UCIUZejYbHXZOHhwUokcRBUQ"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span className="yt-play">▶</span>
-                            <span className="yt-thumb-text">채널 미리보기</span>
-                        </Link>
-
-                        <Link
-                            className="yt-subscribe"
-                            to="https://www.youtube.com/channel/UCIUZejYbHXZOHhwUokcRBUQ?sub_confirmation=1"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            구독하러 가기
-                        </Link>
-                    </div>
-                </section>
             </main>
 
             <Footer />
