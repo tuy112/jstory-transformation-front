@@ -41,9 +41,8 @@ function Header() {
                             <Link to="/profile">About Me</Link>
                         </li>
                         <li>
-                            <Link to="/project">프로젝트 모음</Link>
+                            <Link to="/project">외부 프로젝트 투입 이력</Link>
                         </li>
-                        <li><Link to="/todo">투두리스트</Link></li>
                         <li>
                             <Link 
                                 to="https://github.com/tuy112/Jstory" 
@@ -74,6 +73,8 @@ function Header() {
                                 <Link to="/mountain" className="sub-button">산행기록방</Link>
                                 <Link to="/study" className="sub-button">공부기록방</Link>
                                 <Link to="/three" className="sub-button">3D공간</Link>
+                                <Link to="/todo" className="sub-button">투두리스트</Link>
+                                <Link to="/book" className="sub-button">'끌림의 코드 : 지배의 법칙' 책 읽기</Link>
                             </div>
                         </div>
                     </div>
