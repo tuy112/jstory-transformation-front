@@ -138,9 +138,11 @@ hr {
 /* sub2 : project */
 .select-wrap h2 {
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 15px;
     font-size: 15px;
     font-weight: 400;
+    color: #fff;
   }
   
 /*  카드  */
@@ -156,6 +158,10 @@ hr {
 }
 .select-box:hover {
     background-color: #ededed;
+}
+
+.firstbox {
+    margin-bottom: 40px;
 }
   
 .box-item {

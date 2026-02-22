@@ -17,7 +17,81 @@ const Project = () => {
                         PROJECT 
                         <em>[ 아래 카드에 커서를 올려보세요! ]</em>
                     </h2>
-                    <div className="select-box" id="selectBox">
+                    <div className="select-box firstbox" id="selectBox">
+                        <div className="box-item item1">
+                            <div className="box-front">
+                                <h3>한국수산해양연수원 기록관리시스템 구축 (데이터 이관 작업 투입)</h3>
+                                <p>2026-01 ~ 2026-02</p>
+                            </div>
+                            <div className="box-back">
+                                <p>
+                                    ☆ 1 <br/>
+                                    - 주요 업무 : <br/>
+                                    ""데이터 이관 작업 투입"<br/>
+                                    "기존 시스템에서 새로운 시스템으로 데이터 이전 작업 수행"<br/>
+                                    "데이터 정제 및 검증 작업"<br/>
+                                    "이관된 데이터의 정확성 및 완전성 확인"<br/>
+                                    "이관 과정에서 발생하는 문제 해결 및 지원"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="box-item item2">
+                            <div className="box-front">
+                                <h3>해남군청 전자결재 문서 데이터 이관 작업</h3>
+                                <p>2025-11 ~ 2025-12</p>
+                            </div>
+                            <div className="box-back">
+                                <p>
+                                    ☆ 2 <br/>
+                                    - 주요 업무 : <br/>
+                                    "전자결재 문서 데이터 이관 작업 투입"<br/>
+                                    "기존 시스템에서 새로운 시스템으로 전자결재 문서 데이터 이전 작업 수행"<br/>
+                                    "데이터 정제 및 검증 작업"<br/>
+                                    "이관된 데이터의 정확성 및 완전성 확인"<br/>
+                                    "이관 과정에서 발생하는 문제 해결 및 지원"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="box-item item3">
+                            <div className="box-front">
+                                <h3>부산시교육청 기록물(데이터 이관 결과) 육안검수 - 테스트 단계</h3>
+                                <p>2025-10 ~ 2025-11</p>
+                            </div>
+                            <div className="box-back">
+                                <p>
+                                    ☆ 3 <br/>
+                                    - 주요 업무 : <br/>
+                                    "기록물(데이터 이관 결과) 육안검수 - 테스트 단계 투입"<br/>
+                                    "이관된 데이터의 육안 검수 작업 수행"<br/>
+                                    "데이터의 정확성 및 완전성 확인"<br/>
+                                    "검수 과정에서 발견된 문제점 보고 및 해결 지원"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="box-item item4">
+                            <div className="box-front">
+                                <h3>한국남부발전 기록관리시스템 전자결재 문서 데이터 이관 작업</h3>
+                                <p>2025-03 ~ 2025-10</p>
+                            </div>
+                            <div className="box-back">
+                                <p>
+                                    ☆ 4 <br/>
+                                    - 주요 업무 : <br/>
+                                    "기록관리시스템 전자결재 문서 데이터 이관 작업 투입"<br/>
+                                    "기존 시스템에서 새로운 시스템으로 전자결재 문서 데이터 이전 작업 수행"<br/>
+                                    "데이터 정제 및 검증 작업"<br/>
+                                    "이관된 데이터의 정확성 및 완전성 확인"<br/>
+                                    "이관 과정에서 발생하는 문제 해결 및 지원"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="select-box secondbox" id="selectBox">
                         <div className="box-item item1">
                             <div className="box-front">
                                 <h3>의료기기 플랫폼 프로토타입 제작 (Facial Implant 요구분석)</h3>
@@ -25,7 +99,7 @@ const Project = () => {
                             </div>
                             <div className="box-back">
                                 <p>
-                                    ☆ 1 <br/>
+                                    ☆ 5 <br/>
                                     - 주요 업무 : <br/>
                                     "시장조사 (SWOT분석, STP전략 분석, 마케팅 mix 4p전략, 경쟁사 밴치마킹)"<br/>
                                     "요구분석 정의서 제작"<br/>
@@ -44,7 +118,7 @@ const Project = () => {
                             </div>
                             <div className="box-back">
                                 <p>
-                                    ☆ 2 <br/>
+                                    ☆ 6 <br/>
                                     - 주요 업무 : <br/>
                                     "화면 퍼블리싱부터 프론트엔드 개발, 프론트와 백 API 연동"<br/>
                                     "화면 설계서 및 규격서를 보면서 구현 단계" (7월)<br/>
@@ -63,7 +137,7 @@ const Project = () => {
                             </div>
                             <div className="box-back">
                                 <p>
-                                    ☆ 3 <br/>
+                                    ☆ 7 <br/>
                                     - 주요업무 : <br/>
                                     "API 사용 건 수 분석" <br/>
                                     "차트라이브러리 사용" - chart.js <br/>
@@ -82,7 +156,7 @@ const Project = () => {
                             </div>
                             <div className="box-back">
                                 <p>
-                                    ☆ 4 <br/>
+                                    ☆ 8 <br/>
                                     - 주요업무 : <br/>
                                     "금융권 통합단말 차세대 프로젝트 프론트 개발 진행"<br/>
                                     "기존의 ASIS 기반의 구형 서비스에 대한한 TOBE 개발"<br/>
