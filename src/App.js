@@ -14,6 +14,8 @@ import Mountain from './templates/projects/mountain/Mountain';
 import Three from './templates/projects/three/Three';
 import Diet from './templates/projects/diet/Diet';
 import Study from './templates/projects/study/Study';
+import Book from './templates/projects/book/Book';
+
 
 // App 컴포넌트
 import MusicBox from "./templates/component/MusicBox/MusicBox";
@@ -37,6 +39,7 @@ const App = () => {
         <Route path="/mountain" element={<Mountain />} />
         <Route path="/diet" element={<Diet />} />
         <Route path="/study" element={<Study />} />
+        <Route path="/book" element={<Book />} />
       </Routes>
 
       {/* 전역 고정 UI */}

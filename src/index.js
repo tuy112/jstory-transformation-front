@@ -22,6 +22,7 @@ import './static/css/study/study.css';
 import './static/css/three/three.css';
 import './static/css/todo/todo.css';
 import './static/css/diet/diet.css';
+import './static/css/book/book.css';
 
 import './static/css/mobile/mobile.css';
 
