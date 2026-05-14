@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import Header from "../component/Header";
+import Footer from "../component/Footer";
 import me from '../../static/images/about_man.png';
 
 const Profile = () => {
@@ -47,13 +48,15 @@ const Profile = () => {
                     <div className="txtWrap">
                         <h2>About ME</h2>
                         <img src={me} alt="Jay"/>
-                        <p>"기획, 디자인, 개발까지 다하는 인간 스타트업이 되기 위해서 노력 중에 있습니다. <br/>
-                        비록 행정, 법, 경영학을 전공하였으나, 졸업 이후 꾸준히 컴공공부를 하였으며<br/>
-                        개발자가 되었고 젊은 나이에 대규모 SI 프로젝트를 경험하였습니다.<br/>
-                        React.js + Java(Spring)가 제 주력 언어이며 Node.js도 사용가능합니다.<br/>
-                        <br/>
-                        무엇이든 시작하면 제대로 하는 성격의 소유자, 김재혁!<br/>
-                        함께 즐겁고 열정적으로 무언가를 만들 준비가 되어 있습니다!!"</p>
+                        <p>
+                            기획, 디자인, 개발까지 다하는 인간 스타트업이 되기 위해서 노력 중에 있습니다. <br/>
+                            비록 행정, 법, 경영학을 전공하였으나, 졸업 이후 꾸준히 컴공공부를 하였으며<br/>
+                            개발자가 되었고 젊은 나이에 대규모 SI 프로젝트를 경험하였습니다.<br/>
+                            React.js + Java(Spring)가 제 주력 언어이며, Next.js(TS)도 사용 가능합니다.<br/>
+                            <br/>
+                            무엇이든 시작하면 제대로 하는 성격의 소유자, 김재혁!<br/>
+                            함께 즐겁고 열정적으로 무언가를 만들 준비가 되어 있습니다!!
+                        </p>
                     </div>
                 </div>
 
@@ -62,12 +65,13 @@ const Profile = () => {
                 <div className="profile addi">
                     <div className="txtWrap">
                         <h2>Capability</h2>
-                        <p>Linux Server Deverlop</p>
+                        <p>Linux Server Development</p>
                         <p>Java &#40;Spring&#41; </p>
                         <p>Javascript &#40;React.js, Node.js&#41; </p>
+                        <p>TypeScript &#40;Next.js&#41; </p>
                         <p>Publishing with html, CSS, JS </p>
-                        <p>Connecting DB (using MySQL, PostgreSQL, Oracle) </p>
-                        <p>Using Eclipse, Websquare5 (Java, JSP.. etc) </p>
+                        <p>Connecting DB (using Oracle) </p>
+                        <p>Using Websquare5 (Java, JSP.. etc) </p>
                         <p>UX Research / UI Prototyping </p>
                     </div>
                 </div>
@@ -77,10 +81,14 @@ const Profile = () => {
                 <div className="profile lifeGraph">
                     <div className="lifeGraph">
                         <div className="shortView">
-                            <h4>개발 Story [2021 ~ 2024]</h4>
+                            <h4>개발 Story [2021 ~ 2026]</h4>
+                            <dl>
+                                <dt>2026년</dt>
+                                <dd><strong>기록관리시스템 구축 및 유지보수 개발 (Oracle X Java 사용)</strong><em>2025-02 ~ ing</em></dd>
+                            </dl>
                             <dl>
                                 <dt>2025년</dt>
-                                <dd><strong>기록관리시스템 구축 및 유지보수 개발 (Oracle X Linux 사용)</strong><em>2025-02 ~ ing</em></dd>
+                                <dd><strong>기록관리시스템 구축 및 유지보수 개발 (Oracle X Java 사용)</strong><em>2025-02 ~ ing</em></dd>
                                 <dd><strong>Mikep 전자결재 문서 이관 사업</strong><em>2025-02 ~ 2025-10</em></dd>
                                 <dd><strong>의료기기 플랫폼 프로토타입 제작 </strong><em>2024-12 ~ 2025-01</em></dd>
                             </dl>
@@ -109,6 +117,9 @@ const Profile = () => {
                     </div>
                 </div>
             </section>
+
+            {/* footer */}
+            <Footer />
         </div>
     );
 }

@@ -1,4 +1,6 @@
+import React from "react";
 import Header from "../component/Header";
+import Footer from "../component/Footer";
 
 const Project = () => {
 
@@ -20,7 +22,10 @@ const Project = () => {
                     <div className="select-box firstbox" id="selectBox">
                         <div className="box-item item1">
                             <div className="box-front">
-                                <h3>한국수산해양연수원 기록관리시스템 구축 (데이터 이관 작업 투입)</h3>
+                                <h3>
+                                    한국수산해양연수원 기록관리시스템 구축<br/> 
+                                    (데이터 이관 작업 투입)
+                                </h3>
                                 <p>2026-01 ~ 2026-02</p>
                             </div>
                             <div className="box-back">
@@ -56,7 +61,10 @@ const Project = () => {
 
                         <div className="box-item item3">
                             <div className="box-front">
-                                <h3>부산시교육청 기록물(데이터 이관 결과) 육안검수 - 테스트 단계</h3>
+                                <h3>
+                                    부산시교육청 기록물(데이터 이관 결과) 육안검수 <br/>
+                                    - 테스트 단계
+                                </h3>
                                 <p>2025-10 ~ 2025-11</p>
                             </div>
                             <div className="box-back">
@@ -73,7 +81,10 @@ const Project = () => {
 
                         <div className="box-item item4">
                             <div className="box-front">
-                                <h3>한국남부발전 기록관리시스템 전자결재 문서 데이터 이관 작업</h3>
+                                <h3>
+                                    한국남부발전 기록관 전자결재 문서<br/>
+                                    데이터 이관 작업
+                                </h3>
                                 <p>2025-03 ~ 2025-10</p>
                             </div>
                             <div className="box-back">
@@ -168,6 +179,9 @@ const Project = () => {
                     </div>
                 </div>
             </main>
+
+            {/* footer */}
+            <Footer />
         </div>
     );
 }

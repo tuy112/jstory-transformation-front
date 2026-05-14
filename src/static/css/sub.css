@@ -161,6 +161,10 @@ hr {
 }
 
 .firstbox {
+    margin-bottom: 20px;
+}
+
+.select-box {
     margin-bottom: 40px;
 }
   
@@ -200,6 +204,14 @@ hr {
     transform: rotateY(0deg);
     display: flex;
     flex-direction: column;
+}
+
+.box-front h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .box-back {
