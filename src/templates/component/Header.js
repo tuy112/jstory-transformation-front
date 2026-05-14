@@ -1,13 +1,31 @@
-import { useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
-    const [isOpen, setIsOpen] = useState(false);
+import Pika from "../../static/images/pika.png";
 
-    // 햄버거 메뉴 토글
+function Header() {
+
+    // 1. 햄버거 메뉴 상태 관리
+    const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = useCallback(() => {
         setIsOpen(prev => !prev);
     }, []);
+
+    // 2. 타이핑 효과
+    const text = "안녕하세요! 풀스택 개발자, Jay입니다😊";
+    const [displayText, setDisplayText] = useState("");
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        if (index < text.length) {
+        const timeout = setTimeout(() => {
+            setDisplayText((prev) => prev + text.charAt(index));
+            setIndex((prev) => prev + 1);
+        }, 70);
+
+        return () => clearTimeout(timeout);
+        }
+    }, [index, text]);
 
     return (
         <header id="header">
@@ -35,6 +53,14 @@ function Header() {
                 </button>
 
                 <div className={`side-menu ${isOpen ? "open" : ""}`} id="sideMenu">
+                    
+                    {/* 햄버거 메뉴 프로필 공간 */}
+                    <div className="hamburger-profile">
+                        <img src={Pika} alt="프로필 이미지" className="profile-image" />
+                        <h2 className="profile-name">JAY</h2>
+                        <span className="profile-description">{displayText}</span>
+                    </div>
+                    
                     <ul className="menu-section">
                         <li><Link to="/home">Home</Link></li>
                         <li>

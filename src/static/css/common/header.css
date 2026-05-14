@@ -114,11 +114,42 @@
     left: 0;
 }
 
+/* side menu - 프로필 */
+.hamburger-profile {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+
+.profile-description {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+
 
 /* side menu - 메뉴 리스트 */
 .menu-section {
     padding: 1rem 0;
-    margin-top: 70px;
 }
 
 .menu-section li {
